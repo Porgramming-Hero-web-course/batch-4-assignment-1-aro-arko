@@ -23,3 +23,43 @@ car = 99; // It’s a number
 ```
 
 The car name can be any string value or number. No boolean is allowed here. This is why we need this union type. It plays a crucial rule in terms of picking up any type.
+
+## Toy Combination Challenge
+
+Now, you liked the Robot also. But your mom says only one to choose. But you are a smart programmer. You have an idea. You asked your mom to give you a toy that consists of wheels like a car and arms like a robot. After looking around, when your mom failed to find this type of toy, the only option is to buy a car and a robot. Isn’t it? But if your mom is very strict, then take your own risk! 😂😂
+
+But your mom, she thinks that she is smarter than you. She replied, "Okay, but under one condition. You have to combine these two and make a new toy with your required features: wheels and arms."
+
+Come on, buddy. You’re a programmer. **“No worries. Why Fear, when TypeScript is here!”**
+
+## Intersection Types: "This AND That"
+
+In TypeScript, Intersection is a type that lets us choose both and make a new combination. It allows us to have all the parts of different things. Pretty cool, right?
+
+```typescript
+type Car = {
+    wheels: number;  // A car has wheels
+};
+
+type Robot = {
+    arms: number;    // A robot has arms
+};
+
+type CarRobot = Car & Robot; // A CarRobot has both wheels and arms
+
+let myToy: CarRobot = {
+    wheels: 4,
+    arms: 2
+};
+
+Now you can show it to your mom and represent our new toy named CarRobot, which contains 4 wheels and 2 arms. Yahoooo!
+
+So today we explored Union Types & Intersection Types.
+
+Union Types allow us to keep things flexible if we need something that can be different types, like a car or a robot, or choosing a car name as a string or a number.
+Intersection Types provide a special feature of combining multiple things together into one thing.
+
+Now it’s your turn to do coding. Think about whether you need something like “this or that,” or “this and that.”
+
+~Happy Coding
+```
