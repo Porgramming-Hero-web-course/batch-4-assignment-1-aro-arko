@@ -38,19 +38,20 @@ In TypeScript, Intersection is a type that lets us choose both and make a new co
 
 ```typescript
 type Car = {
-    wheels: number;  // A car has wheels
+  wheels: number; // A car has wheels
 };
 
 type Robot = {
-    arms: number;    // A robot has arms
+  arms: number; // A robot has arms
 };
 
 type CarRobot = Car & Robot; // A CarRobot has both wheels and arms
 
 let myToy: CarRobot = {
-    wheels: 4,
-    arms: 2
+  wheels: 4,
+  arms: 2,
 };
+```
 
 Now you can show it to your mom and represent our new toy named CarRobot, which contains 4 wheels and 2 arms. Yahoooo!
 
@@ -62,4 +63,3 @@ Intersection Types provide a special feature of combining multiple things togeth
 Now it’s your turn to do coding. Think about whether you need something like “this or that,” or “this and that.”
 
 ~Happy Coding
-```
