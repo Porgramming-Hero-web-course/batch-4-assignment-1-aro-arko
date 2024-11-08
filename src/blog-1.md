@@ -1,4 +1,4 @@
-# The significance of union and intersection types in Typescript
+# TypeScript Union & Intersection Types
 
 TypeScript is a programming language that makes coding easier and more straightforward. Today, we’ll be exploring two cool tricks: Union & Intersection Types. Yaaaa…
 
@@ -21,3 +21,5 @@ car = 99; // It’s a number
 
 // car = true; // Sorry! You’re not allowed
 ```
+
+The car name can be any string value or number. No boolean is allowed here. This is why we need this union type. It plays a crucial rule in terms of picking up any type.
