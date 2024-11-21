@@ -1,14 +1,13 @@
 {
-  // Problem 1
-  function sumArray(nums: number[]): void {
-    let total = 0;
+  // problem 1
+  function sumArray(nums: number[]): number {
+    let total: number = 0;
     for (let num of nums) {
       total += num;
     }
-    console.log(total);
-    // return total;
+    return total;
   }
 
-  //   const numbers: Array<number> = [1, 2, 3, 4, 5];
-  sumArray([1, 2, 3, 4, 5]);
+  const result = sumArray([1, 2, 3, 4, 5]);
+  console.log(result);
 }

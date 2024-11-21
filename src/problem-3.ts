@@ -1,16 +1,20 @@
 {
   // problem 3
-  function countWordOccurrences(words: string, searchItem: string): void {
-    const arrayOfWord: string[] = words.split(" ");
-    // console.log(arrayOfWord);
+  function countWordOccurrences(words: string, searchItem: string): number {
+    const givenAllLower = words.toLowerCase();
+    const searchAllLower = searchItem.toLowerCase();
+
+    const arrayOfWord: string[] = givenAllLower.split(" ");
+
     let cnt = 0;
     for (const word of arrayOfWord) {
-      if (word === searchItem) {
+      if (word === searchAllLower) {
         cnt++;
       }
     }
-    console.log(cnt);
+    return cnt;
   }
 
-  countWordOccurrences("I love typescript", "typescript");
+  const result = countWordOccurrences("I love typescript", "typescript");
+  console.log(result);
 }

@@ -1,20 +1,16 @@
 {
   // problem 2
-
-  function removeDuplicates(nums: number[]): void {
-    let uniqeArray: Array<number> = [];
-
-    // nums.sort;
-    for (let i = 0; i < nums.length; i++) {
-      if (!uniqeArray.includes(nums[i])) {
-        uniqeArray.push(nums[i]);
+  function removeDuplicates(nums: number[]): number[] {
+    const uniqueArray: number[] = [];
+    for (const num of nums) {
+      if (!uniqueArray.includes(num)) {
+        uniqueArray.push(num);
       }
     }
-    console.log(uniqeArray);
-
-    // return uniqeArray;
+    return uniqueArray;
   }
-  //   const numbers: Array<number> = [1, 2, 2, 2, 2, 2, 3, 4, 4, 5];
 
-  removeDuplicates([1, 2, 2, 3, 4, 4, 5]);
+  const elements: number[] = [1, 2, 2, 3, 4, 4, 5];
+  const result: number[] = removeDuplicates(elements);
+  console.log(result);
 }
